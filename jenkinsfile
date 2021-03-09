@@ -3,9 +3,9 @@ pipeline {
     tools {
         "org.jenkinsci.plugins.terraform.TerraformInstallation" "terraform"
     }
-    parameters {
-        string(name: 'WORKSPACE', defaultValue: 'development', description:'workspace to use in Terraform')
-    }
+    //parameters {
+    //    string(name: 'WORKSPACE', defaultValue: 'development', description:'workspace to use in Terraform')
+   // }
     environment {
         TF_HOME = tool('terraform')
         TF_INPUT = "0"
